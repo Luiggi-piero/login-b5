@@ -1,0 +1,40 @@
+:root {
+  --dark: #16191c;
+  --dark-input: #1e2126;
+  --white: #fff;
+  --white-s: rgba(255, 255, 255, 0.5);
+}
+body {
+  font-family: "League Spartan", sans-serif;
+  font-weight: 300;
+  color: var(--white);
+}
+.bg-dark {
+  background: var(--dark) !important;
+}
+.bg-dark-input {
+  transition: none;
+  background: var(--dark-input);
+  color: var(--white);
+}
+
+.form-control,
+.btn {
+  min-height: 3.12rem;
+}
+
+.img-one {
+  background-image: url("./images/product-1.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.img-two {
+  background-image: url("./images/product-2.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.bg-dark-input:focus {
+  background: var(--dark-input);
+  color: var(--white);
+  border: 1px solid var(--white-s) !important;
+}
